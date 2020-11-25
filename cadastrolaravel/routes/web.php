@@ -11,6 +11,8 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'Usuario@cadastrar');
+Route::post('/salvar', 'Usuario@salvar');
+
+
+// Route::match(['get','post'], '/',);
