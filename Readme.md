@@ -175,14 +175,24 @@ CREATE TABLE usuario (id INTEGER PRIMARY KEY UNIQUE,nome VARCHAR,email VARCHAR,s
 
 CREATE TABLE usuario (id INTEGER PRIMARY KEY UNIQUE,nome VARCHAR,email VARCHAR,senha VARCHAR,data_cadastro DATETIME);
 
+- para visualizar o conteúdo cadastrado : 
 
+SELECT * FROM usuario;
 
 # Carbon 
 
 Extende a classe padrão do datetime do php e adiciona outras funcoes interessantes 
 
-5:49 a permissao estava errada (cloquei 777 cuidado! ) e usei o sqlite quando devia ter usado o sqlite3 . 
+- a permissao estava errada (cloquei 777 cuidado! ) e usei o sqlite quando devia ter usado o sqlite3 . 
 
 
+
+# Consumindo nossa API 
+
+- funciona o get no postman 
+- funciona o post no postman 
+
+
+# Framework Symfony
 
 

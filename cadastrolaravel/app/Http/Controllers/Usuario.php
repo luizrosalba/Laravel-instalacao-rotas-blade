@@ -19,8 +19,15 @@ class Usuario extends Controller
             "senha"=> "required|min:5",
         ]);
 
-        UsuarioModel::cadastrar($request); 
-        return view ('usuario.sucesso');
+        if (UsuarioModel::cadastrar($request)){
+            return view ('usuario.sucesso',[
+                "fulano"=>$request->input ('nome')
+            ]); 
+        } 
+        else {
+            echo "Falha no cadastro!";
+        }
+        
 
     }
 }

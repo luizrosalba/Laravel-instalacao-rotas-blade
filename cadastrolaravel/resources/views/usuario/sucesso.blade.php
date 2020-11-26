@@ -1,4 +1,4 @@
-<h1> Ola {{} $fulano}}, seu cadastro realizado com sucesso ! </h1>
+<h1> Ola {{ $fulano }}, seu cadastro realizado com sucesso ! </h1>
 
 
-<a href="{{route('home'}}">Voltar</a>
+<a href="{{route('home')}}">Voltar</a>

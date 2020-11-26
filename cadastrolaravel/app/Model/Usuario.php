@@ -23,16 +23,16 @@ class Usuario extends Model
             "senha",
             "data_cadastro"
         ])
-        ->limit($limite);
-        //->get();
-        dd($sql->toSql());
+        ->limit($limite)->get();
+        //dd($sql->toSql());
+        return $sql;
     }
 
     public static function  cadastrar(Request $request){
 
         DB::enableQueryLog();
 
-        self::insert([
+        return self::insert([
             "nome"=> $request -> input ('nome'), 
             "email"=> $request -> input ('email'), 
             "senha"=> Hash::make($request->input('senha')), 
